@@ -1,0 +1,86 @@
+- key: Drugs to filter for Pan Solids
+  description: Medications prescribed to Pan Solids Patient for PA 
+  synonyms:
+    - carboplatin
+    - pembrolizumab
+    - pemetrexed
+    - paclitaxel
+    - durvalumab
+    - osimertinib
+    - nivolumab
+    - docetaxel
+    - ipilimumab
+    - gemcitabine
+    - ramucirumab
+    - etoposide
+    - atezolizumab
+    - bevacizumab
+    - cisplatin
+    - sotorasib
+    - dexamethasone  
+    - brigatinib
+    - erlotinib
+    - mobocertinib
+    - dacomitinib
+    - alectinib
+    - necitumumab
+    - amivantamab
+    - gefitinib
+    - ceritinib  
+    - crizotinib
+    - lorlatinib
+    - afatinib
+    - adagrasib
+
+  codes:
+    RxNorm:
+    - '40048'
+    - '1547545'
+    - '68446'
+    - '56946'
+    - '1919503'
+    - '1721560'
+    - '1597876'
+    - '72962'
+    - '1094833'
+    - '12574'
+    - '1535922'
+    - '4179'
+    - '1792776'
+    - '253337'
+    - '2555'
+    - '2550714'
+    - '3264'
+    - '1594187'
+    - '1325363'
+    - '48960356845'
+    - '35200803'
+    - '35604657'
+    - '1727455'
+    - '1723738'
+    - '2549199'
+    - '328134'
+    - '1535457'
+    - '1148495'
+    
+    
+    
+    
+    
+    
+    
+    CHAI_DYNAMIC_NDC:
+    - '42367053133' #pembrolizumab
+    - '60505606500' #pemetrexed
+    - '00409106201' #pemetrexed
+    - '00003712511' # nivolumab
+    - '0075800404' # docetaxel
+    - '50242009170' #atezolizumab
+    - '1672929512' 
+    - '00409106001'
+    - '00409106101'
+    - '70860020350'
+    - 'S1826'
+    - '0143951001'
+    - '71288020303'
+    - '55513050450'

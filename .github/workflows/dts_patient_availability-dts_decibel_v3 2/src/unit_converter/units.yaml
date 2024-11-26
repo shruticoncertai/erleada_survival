@@ -1,0 +1,142 @@
+- base: lb
+  convert:
+    lbs: unit_converter.convert.alias_unit
+    pound: unit_converter.convert.alias_unit
+    pounds: unit_converter.convert.alias_unit
+    kg: unit_converter.convert.kg_to_lb
+    kgs: unit_converter.convert.kg_to_lb
+    kilogram: unit_converter.convert.kg_to_lb
+    kilograms: unit_converter.convert.kg_to_lb
+
+- base: kg
+  convert:
+    kgs: unit_converter.convert.alias_unit
+    kilogram: unit_converter.convert.alias_unit
+    kilograms: unit_converter.convert.alias_unit
+    lb: unit_converter.convert.lb_to_kg
+    lbs: unit_converter.convert.lb_to_kg
+    pound: unit_converter.convert.lb_to_kg
+    pounds: unit_converter.convert.lb_to_kg
+
+- base: fahrenheit
+  convert:
+    degrees fahrenheit: unit_converter.convert.alias_unit
+    degrees celsius: unit_converter.convert.c_to_f
+    celsius: unit_converter.convert.c_to_f
+
+- base: g/dl
+  convert:
+    gram/deciliter: unit_converter.convert.alias_unit
+    gm/dl: unit_converter.convert.alias_unit
+    gram/dl: unit_converter.convert.alias_unit
+    mg/dl: unit_converter.convert.div1k
+    ug/dl: unit_converter.convert.div1m
+    g/l: unit_converter.convert.div10
+
+- base: mg/dl
+  convert:
+    milligram/deciliter: unit_converter.convert.alias_unit
+    g/dl: unit_converter.convert.times1000
+    mg/l: unit_converter.convert.div10
+    g/l: unit_converter.convert.times100
+    ng/ml: unit_converter.convert.div10k
+    ug/l: unit_converter.convert.div10k
+    
+- base: ng/ml
+  convert:
+    milligram/deciliter: unit_converter.convert.times10k
+    g/dl: unit_converter.convert.times10ml
+    mg/l: unit_converter.convert.times1000
+    g/l: unit_converter.convert.times1ml
+    ug/l: unit_converter.convert.alias_unit
+    ug/dl: unit_converter.convert.times10
+    ng/dl: unit_converter.convert.div100
+
+- base: pg/ml
+  convert:
+    ng/ml: unit_converter.convert.times1000
+
+- base: 1e3/mm3
+  convert:
+    k/mm3: unit_converter.convert.alias_unit
+    k/ul: unit_converter.convert.alias_unit #added
+    x10e3/ul: unit_converter.convert.alias_unit #added
+    x10*3/ul: unit_converter.convert.alias_unit #added
+    10*3/ul: unit_converter.convert.alias_unit #added
+    x10*3u/l: unit_converter.convert.alias_unit #added
+    10*3ul: unit_converter.convert.alias_unit #added
+    1000/cmm: unit_converter.convert.alias_unit #added
+    k/cmm: unit_converter.convert.alias_unit #added
+    th/cmm: unit_converter.convert.alias_unit #added
+    k/cumm: unit_converter.convert.alias_unit #added
+    k/mcl: unit_converter.convert.alias_unit #added
+    10^3/ul: unit_converter.convert.alias_unit #added
+    x10^3/ul: unit_converter.convert.alias_unit #added
+    x 10^3/ul: unit_converter.convert.alias_unit #added
+    10e3/ul: unit_converter.convert.alias_unit #added
+    10e9/l: unit_converter.convert.alias_unit #added
+    10^9/l: unit_converter.convert.alias_unit #added
+    10*9 cells/l: unit_converter.convert.alias_unit #added
+    10*9/l: unit_converter.convert.alias_unit #added
+    tho/cmm: unit_converter.convert.alias_unit #added
+    thou/mm3: unit_converter.convert.alias_unit
+    10^3/mm^3: unit_converter.convert.alias_unit #added
+    10^3/mm: unit_converter.convert.alias_unit #added
+    thou/mcl: unit_converter.convert.alias_unit
+    x10(3)/mcl: unit_converter.convert.alias_unit #added
+    x10(6)/mcl: unit_converter.convert.times1000
+    x10(3)/ul: unit_converter.convert.alias_unit #added
+    10x3/ul: unit_converter.convert.alias_unit #added
+    thou/ul: unit_converter.convert.alias_unit #added
+    th/ul: unit_converter.convert.alias_unit #added
+    thousand/ul: unit_converter.convert.alias_unit #added
+    m/mm3: unit_converter.convert.times1000
+    cells/microliter: unit_converter.convert.div1k
+    cells/ul: unit_converter.convert.div1k
+    10*6/l: unit_converter.convert.div1k #added
+    percent: unit_converter.convert.invalid_unit
+    
+- base: percent
+  convert:
+    fraction: unit_converter.convert.times100
+    k/mm3: unit_converter.convert.invalid_unit
+    thou/mm3: unit_converter.convert.invalid_unit
+    thou/mcl: unit_converter.convert.invalid_unit
+    m/mm3: unit_converter.convert.invalid_unit
+    cells/microliter: unit_converter.convert.invalid_unit
+
+- base: u/l
+  convert:
+    iu/l: unit_converter.convert.alias_unit
+    international unit/liter: unit_converter.convert.alias_unit
+
+- base: mmhg
+  convert:
+    millimeter of mercury: unit_converter.convert.alias_unit
+
+- base: body mass index
+  convert:
+    kgm2: unit_converter.convert.alias_unit
+    kilogram/meter squared: unit_converter.convert.alias_unit
+
+- base: meq/l
+  convert:
+    millimole/liter: unit_converter.convert.alias_unit
+    mmol/l: unit_converter.convert.alias_unit #added
+    meq/liter: unit_converter.convert.alias_unit #added
+    
+- base: mg/24hr
+  convert:
+    mg/24 hr: unit_converter.convert.alias_unit
+    mg/24 hours: unit_converter.convert.alias_unit
+    mg/(24.h): unit_converter.convert.alias_unit
+    mg/24 h: unit_converter.convert.alias_unit
+    mg/24h: unit_converter.convert.alias_unit
+    mg/24.h: unit_converter.convert.alias_unit
+    mg/24h": unit_converter.convert.alias_unit
+    g/24hr: unit_converter.convert.times1000
+    g/24h: unit_converter.convert.times1000
+    
+- base: breaths/min
+  convert:
+    bpm: unit_converter.convert.alias_unit

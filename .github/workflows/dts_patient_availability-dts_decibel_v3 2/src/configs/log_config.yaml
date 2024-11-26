@@ -1,0 +1,82 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+  simple:
+    format: "%(asctime)s - %(name)s - %(levelname)s - [%(filename)s:%(lineno)d] %(message)s"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: simple
+    stream: ext://sys.stdout
+
+  server_filehandler:
+    class: logging.handlers.RotatingFileHandler
+    level: INFO
+    mode: a+
+    formatter: simple
+    filename: 'server.log'
+    maxBytes: 104857600 # 100MB
+    encoding: utf8
+  
+
+  error_file_handler:
+    class: logging.handlers.RotatingFileHandler
+    level: ERROR
+    mode: a+
+    formatter: simple
+    filename: 'app.log'
+    maxBytes: 104857600 # 100MB
+    backupCount: 20
+    encoding: utf8
+
+  warning_file_handler:
+    class: logging.handlers.RotatingFileHandler
+    level: WARNING
+    mode: a+
+    formatter: simple
+    filename: 'app.log'
+    maxBytes: 104857600 # 100MB
+    backupCount: 20
+    encoding: utf8
+
+  info_file_handler:
+    class: logging.handlers.RotatingFileHandler
+    level: INFO
+    mode: a+
+    formatter: simple
+    filename: 'app.log'
+    maxBytes: 104857600 # 100MB
+    backupCount: 20
+    encoding: utf8
+
+  debug_file_handler:
+    class: logging.handlers.RotatingFileHandler
+    level: DEBUG
+    mode: a+
+    formatter: simple
+    filename: 'app.log'
+    maxBytes: 104857600 # 100MB
+    backupCount: 20
+    encoding: utf8
+
+root:
+  level: ERROR
+  handlers: [console, info_file_handler, error_file_handler, warning_file_handler, debug_file_handler]
+  propagate: yes
+
+loggers:
+  server:
+    level: INFO
+    handlers: [console, server_filehandler]
+  
+  feature_generator:
+    level: DEBUG
+    handlers: [debug_file_handler]
+  
+  model_builder: 
+    level: INFO
+    handlers: [console, info_file_handler]
+    

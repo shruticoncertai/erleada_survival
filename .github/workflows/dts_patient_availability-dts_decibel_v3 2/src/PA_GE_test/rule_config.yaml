@@ -1,0 +1,112 @@
+rules_table:
+    patient:
+        person_id:
+            - one_value_one_record_rule
+            - not_null_rule
+            - column_datatype_check: int
+        gender:
+            - limited_values_rule: 
+                - Male
+                - Female
+                - Unknown
+            - column_datatype_check: str
+        source_age:
+            - value_in_range:
+                - 12
+                - 90
+                - False
+            - column_datatype_check: int
+            
+    condition:
+        diagnosis_date:
+            - value_in_range:
+                - 2020-01-01
+                - 2024-12-31
+                - True
+            - column_datatype_check: datetime64
+        chai_patient_id:
+            - not_null_rule
+            - column_datatype_check: str
+    medication:
+        med_start_date:
+            - value_in_range:
+                - 2000-01-01
+                - 2024-12-31
+                - True
+            - column_datatype_check: datetime64
+        med_end_date:
+            - value_in_range:
+                - 2000-01-01
+                - 2024-12-31
+                - True
+            - column_datatype_check: datetime64
+        med_generic_name_standard_name: 
+            - column_datatype_check: str
+        chai_patient_id:
+            - not_null_rule
+            - column_datatype_check: str
+    patient_test_raw:
+        test_date:
+            - value_in_range:
+                - 2020-01-01
+                - 2024-12-31
+                - True
+            - column_datatype_check: datetime64
+        test_name_standard_code:
+            - column_datatype_check: str
+        test_value_numeric:
+            - column_datatype_check: float64
+        test_unit_source_name:
+            - column_datatype_check: str
+            - limited_values_rule: null
+        chai_patient_id:
+            - not_null_rule
+            - column_datatype_check: str
+    tumor_exam:
+        tumor_grade_standard_name:
+            - column_datatype_check: str 
+            - limited_values_rule:
+                - grade 1
+                - grade 2
+                - grade 3
+                - grade 4
+        exam_date:
+            - value_in_range:
+                - 2020-01-01
+                - 2024-12-31
+                - True
+            - column_datatype_check: datetime64
+        chai_patient_id:
+            - not_null_rule
+            - column_datatype_check: str
+    patient_test_std:
+        test_date:
+            - value_in_range:
+                - 2020-01-01
+                - 2024-12-31
+                - True
+            - column_datatype_check: datetime64
+        test_name_standard_code:
+            - column_datatype_check': str
+        test_value_numeric:
+            - column_datatype_check: float64
+            - value_in_range_test_value:
+                - null
+                - null
+                - False
+        test_unit_source_name:
+            - column_datatype_check: str
+            - limited_values_rule: null
+        chai_patient_id:
+            - not_null_rule
+            - column_datatype_check: str
+            
+value_counts_config:
+    patient:
+        - gender
+    tumor_exam:
+        - tumor_grade_standard_name
+    medication:
+        - med_generic_name_standard_name
+    patient_test_raw:
+        - test_name_standard_code

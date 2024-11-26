@@ -1,0 +1,40 @@
+- key: hr
+  description: 'reference range from
+                https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979'
+  synonyms:
+    - heart rate
+    - pulse rate
+  codes:
+    LOINC:
+      - 8867-4
+    SNOMED:
+      - 78564009
+  attributes:
+    valid:
+      min: 50.0
+      max: 200.0
+    reference:
+      min: 60.0
+      max: 100.0
+    units: breaths/min
+    source: safety 20210708
+
+- key: dbp
+  description: 'reference range: max from https://www.cdc.gov/bloodpressure/about.htm,
+                min set equal to min of valid range carried over from previous version'
+  synonyms:
+    - diastolic blood pressure
+  codes:
+    LOINC:
+      - 8462-4
+    SNOMED:
+      - 271650006
+  attributes:
+    valid:
+      min: 30.0
+      max: 150.0
+    reference:
+      min: 30.0
+      max: 80.0
+    units: mmhg
+    source: safety 20210708

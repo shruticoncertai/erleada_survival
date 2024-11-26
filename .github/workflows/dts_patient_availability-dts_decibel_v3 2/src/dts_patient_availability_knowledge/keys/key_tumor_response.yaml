@@ -1,0 +1,5 @@
+- key: Tumor Response Status
+  description: Disease Status Assessment value findings related to therapeutic response
+  codes:
+    CHAI_CUSTOM_DISEASE_STATUS_ASSESSMENT_NAME:
+      - 12882

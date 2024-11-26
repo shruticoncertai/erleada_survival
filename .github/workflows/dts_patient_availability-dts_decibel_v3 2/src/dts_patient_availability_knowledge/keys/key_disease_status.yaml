@@ -1,0 +1,33 @@
+- key: Complete therapeutic response
+  description: Disease Status Assessment value findings related to therapeutic response
+  codes:
+    SNOMED:
+      - 399056007 #concept_code
+      #- 4163135  #concept_id
+
+- key: Partial therapeutic response
+  description: Disease Status Assessment value findings related to therapeutic response
+  codes:
+    SNOMED:
+      - 399204005 #concept_code
+      #- 4161302  #concept_id     	 
+
+- key: Tumor progression
+  description: Disease Status Assessment value findings related to therapeutic response
+  codes:
+    SNOMED:
+      - 419835002 #concept_code
+      #- 4168352  #concept_id     	 
+
+- key: Stable
+  description: Disease Status Assessment value findings related to therapeutic response
+  codes:
+    SNOMED:
+      - 58158008 #concept_code
+      #- 4241442  #concept_id   
+
+#- key: Finding related to therapeutic response
+#  description: Assessment Name for getting the related therapeutic response
+#  codes:
+#    SNOMED:
+#      - 118208006

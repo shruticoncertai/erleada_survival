@@ -1,0 +1,22 @@
+- key: multiple_myeloma
+  description: 'cancer-type roll-up taken from DSS data_quiz. The codes are then
+                searched by regex on diagnosis_code_source_code column from
+                condition table of c3_cdm_clqd25_202012 schema.
+                Regex pattern used : ^C90.*|^174.*|^175.*'
+  codes:
+    ICD10CM:
+      - C90.0
+      - C90.00
+      - C90.01
+      - C90.02
+  attributes:
+    type: multiple
+    source: Abbvie/FDA Safety, canoble, 20210603
+
+- key: condition_plasmocytoma
+  description: 'Condition Plasmo Cytoma'
+  codes:
+    ICD10CM:
+      - C90.2
+      - C90.20
+      - C90.21

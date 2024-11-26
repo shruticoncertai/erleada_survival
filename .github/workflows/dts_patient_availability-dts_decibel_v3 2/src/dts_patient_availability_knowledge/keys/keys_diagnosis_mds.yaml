@@ -1,0 +1,15 @@
+- key: mds
+  description: 'cancer-type roll-up taken from DSS data_quiz. The codes are then
+                searched by regex on diagnosis_code_source_code column from
+                condition table of c3_cdm_clqd25_202012 schema.
+                Regex pattern used : ^D46.*|^C94.6'
+  codes:
+    ICD10CM:
+      - C94.6 
+      - D46
+      - D46.9
+      - D46.C
+      - D46.Z
+  attributes:
+    type: multiple
+    source: Abbvie/FDA Safety, canoble, 20210603

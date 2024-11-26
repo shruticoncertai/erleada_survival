@@ -1,0 +1,43 @@
+- key: Positron emission tomography with computed tomography
+  description: Imaging or Proceudural Scans. Also represented as PET
+  codes:
+    SNOMED:
+      - 450436003 # CId:42872445
+    
+- key: Positron emission tomography
+  description: Imaging or Proceudural Scans. Also represented as PET
+  codes:
+    SNOMED:
+      - 82918005 # CId:4305790
+      - 779221000000104 # CId: 3544235
+
+- key: Computed tomography
+  description: Imaging or Proceudural Scans. Also represented as CT
+  codes:
+    SNOMED:
+      - 146281001 # CId:40308455
+      - 77477000 # CId: 28037524679
+
+- key: MRI with contrast
+  description: Imaging or Proceudural Scans.
+  codes:
+    SNOMED:
+      - 51619007 # CId:4198856
+
+- key: Magnetic resonance imaging
+  description: Imaging or Proceudural Scans.
+  codes:
+    SNOMED:
+      - 113091000 # CId:4013636
+
+- key: MRI without contrast
+  description: Imaging or Proceudural Scans.
+  codes:
+    SNOMED:
+      - 90084008 # CId:4231864
+
+- key: Radioisotope scan of bone
+  description: Imaging or Proceudural Scans.
+  codes:
+    SNOMED:
+      - 41747008 # CId:4217238

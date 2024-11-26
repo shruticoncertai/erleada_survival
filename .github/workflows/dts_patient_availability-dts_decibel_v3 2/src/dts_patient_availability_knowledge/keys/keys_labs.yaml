@@ -1,0 +1,259 @@
+- key: hemoglobin_in_blood
+  description: 'Client: Janssen.  Internal Authors: Katrin Gemmler, Travis Stenerson, Yanina Natanzon.
+                reference range from https://labtestsonline.org/tests/hemoglobin, linked from https://loinc.org/718-7/'
+  synonyms:
+    - hemoglobin
+  codes:
+    LOINC:
+      - 718-7
+      #- 30350-3
+      - 20509-6
+      - 30313-1
+      #- 14775-1
+      - 48725-6 #Added
+  attributes:
+    valid:
+      min: 0.0
+      max: 25.0
+    reference:
+      min: 14.0
+      max: 17.5
+    units: g/dl
+    source: janssen 20210708
+
+- key: na
+  description: 'reference range from https://healthyeating.sfgate.com/actions-sodium-human-body-8362.html,
+                linked from https://loinc.org/2951-2/'
+  synonyms:
+    - sodium
+    - sodium serum/plasma
+  codes:
+    LOINC:
+      - 2951-2
+      - 2955-3 #Added
+  attributes:
+    valid:
+      min: 90.0
+      max: 170.0
+    reference:
+      min: 135.0
+      max: 145.0
+    units: meq/l
+    source: Sam's cardiac ae 20210708
+
+- key: k
+  description: 'reference range from https://en.wikipedia.org/wiki/Potassium, linked from https://loinc.org/2823-3/'
+  synonyms:
+    - potassium
+    - potassium serum/plasma
+  codes:
+    LOINC:
+      - 2823-3
+      - 2828-2 # Added
+  attributes:
+    valid:
+      min: 0.0
+      max: 8.0
+    reference:
+      min: 3.5
+      max: 5.0
+    units: meq/l
+    source: Sam's cardiac ae 20210708
+
+- key: cl
+  description: 'reference range from adult normal range as listed at https://labtestsonline.org/tests/chloride,
+                linked from https://loinc.org/2075-0/'
+  synonyms:
+    - chloride
+    - chloride serum/plasma
+  codes:
+    LOINC:
+      - 2075-0
+  attributes:
+    valid:
+      min: 70.0
+      max: 140.0
+    reference:
+      min: 98.0
+      max: 107.0
+    units: meq/l
+    source: Sam's cardiac ae 20210708
+
+- key: mg
+  description: 'reference range from adult normal range as listed at https://www.mayocliniclabs.com/test-catalog/Clinical+and+Interpretive/8448'
+  synonyms:
+    - magnesium
+  codes:
+    LOINC:
+      - 19123-9
+      - 21377-7  #Added
+  attributes:
+    valid:
+      min: 0.0
+      max: 5.0
+    reference:
+      min: 1.7
+      max: 2.3
+    units: mg/dl
+    source: Sam's cardiac ae 20210708
+
+- key: ca
+  description: 'reference range from https://www.mayocliniclabs.com/test-catalog/Clinical+and+Interpretive/601514
+                taking reference min for adults aged 18-59 years and reference max from adults >= 60 years'
+  synonyms:
+    - calcium
+    - calcium serum/plasma
+  codes:
+    LOINC:
+      - 17861-6
+      - 49765-1  #Added
+  attributes:
+    valid:
+      min: 5.0
+      max: 17.0
+    reference:
+      min: 8.6
+      max: 10.2
+    units: mg/dl
+    source: Sam's cardiac ae 20210708
+
+- key: phos
+  description: 'reference range from adult normal range as listed at https://www.mayocliniclabs.com/test-catalog/Clinical+and+Interpretive/8408'
+  synonyms:
+    - phosphate
+  codes:
+    LOINC:
+      - 2777-1
+  attributes:
+    valid:
+      min: 0.0
+      max: 10.0
+    reference:
+      min: 2.5
+      max: 4.5
+    units: mg/dl
+    source: Sam's cardiac ae 20210708
+
+- key: platelets
+  description: 'reference range listed at the top of https://loinc.org/777-3/'
+  synonyms:
+    - platelets count
+    - mean platelet volume
+  codes:
+    LOINC:
+      - 777-3
+      - 26515-7
+      - 53800-9 # Added
+      - 49497-1 # Added
+      - 778-1   # Added
+  attributes:
+    valid:
+      min: 0.0
+      max: 1000.0
+    reference:
+      min: 150.0
+      max: 450.0
+    units: 1e3/mm3
+    source: Sam's cardiac ae 20210708
+
+- key: lymphocytes_count
+  description: 'reference range from https://www.mayocliniclabs.com/test-catalog/Clinical+and+Interpretive/9109'
+  synonyms:
+    - lymphocytes
+  codes:
+    LOINC:
+      - 731-0
+      - 732-8
+      - 26474-7
+  attributes:
+    valid:
+      min: 0.0
+      max: 1000.0
+    reference:
+      min: 0.95
+      max: 3.07
+    units: 1e3/mm3
+    source: rdas, canoble 20210708
+
+- key: neutrophils_count
+  description: 'reference range from https://www.mayocliniclabs.com/test-catalog/Clinical+and+Interpretive/9109'
+  synonyms:
+    - neutrophils
+  codes:
+    LOINC:
+      - 26499-4
+      - 751-8
+      - 753-4
+      - 768-2 #Added
+      - 30451-9 #Added
+  attributes:
+    valid:
+      min: 0.0
+      max: 1000.0
+    reference:
+      min: 1.56
+      max: 6.45
+    units: 1e3/mm3
+    source: rdas, canoble 20210708
+
+- key: m_protein_in_urine
+  description: ''
+  synonyms:
+    - 
+  codes:
+    LOINC:
+      - 42482-0
+      - 40661-1
+      - 35560-2
+  attributes:
+    valid: #Need to be provided
+      min: 0.0
+      max: 0.0
+    reference: #Need to be provided
+      min: 0.0
+      max: 0.0
+    units: mg/24hr
+    source: '' #Need to be provided
+    
+- key: m_protein_in_serum
+  description: ''
+  synonyms:
+    - 
+  codes:
+    LOINC:
+      - 33358-3
+      - 51435-6
+      - 35559-4
+      - 94400-9
+      - 33647-9
+      - 50796-2
+      - 56766-9
+      - 44932-2
+      - 50792-1
+  attributes:
+    valid: #Need to be provided
+      min: 0.0
+      max: 0.0
+    reference: #Need to be provided
+      min: 0.0
+      max: 0.0
+    units: g/dl
+    source: '' #Need to be provided
+       
+- key: serum_free_light 
+  description: ''
+  codes:
+    LOINC:
+      - 36916-5
+      - 33944-0
+      - 11051-0
+      - 11050-2
+  attributes:
+    valid: #Need to be provided
+      min: 0.0
+      max: 0.0
+    reference: #Need to be provided
+      min: 0.0
+      max: 0.0
+    units: mg/dl
+    source: '' #Need to be provided
